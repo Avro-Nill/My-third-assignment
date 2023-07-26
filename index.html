@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/7406e08f5a.js" crossorigin="anonymous"></script>
     <!-- default  -->
     <script>
         tailwind.config = {
@@ -29,9 +31,53 @@
         }
       </style>
 </head>
-<body>
+<body class="font-lato">
     <header class="container mx-auto">
+      <!-- navbar section  -->
+      <nav class="mt-4">
+        <div class="navbar rounded-full md:bg-[#fdacae] lg:bg-[#F85559]">
+          <div class="navbar-start">
 
+          <div class="flex justify-between relative">
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu text-xl text-white font-bold menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About Us </a></li>
+                <li><a>Shop </a></li>
+                <li><a>All Fruts </a></li>
+              </ul>
+            </div>
+            <div class="form-control flex justify-center items-center">
+              <input type="text" placeholder="Search" class="input input-bordered relative md:left-72 lg:left-[350px] xl:left-[580px] 2xl:left-[800px] hidden md:hidden lg:inline w-24 md:w-auto" />
+            </div>
+          </div>
+        <div class="flex justify-end">
+          <div class="navbar-end flex justify-center items-center lg:pl-14">
+            <img src="./images/logo.png" alt="">
+            <div>
+              <h2 class="text-4xl md:text-green-600 lg:text-white font-extrabold w-52">Fruit Burst</h2>
+            </div>
+          </div>
+        </div>
+          <div class="dropdown relative -right-96">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 md:bg-[#ffe6e7]">
+              <li><a>Home</a></li>
+              <li><a>About Us </a></li>
+              <li><a>Shop </a></li>
+              <li><a>All Fruts </a></li>
+              <li><input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </nav>
+      <!-- banner section  -->
+      <section class="my-10">
+        
+      </section>
     </header>
     <main class="container mx-auto">
 
